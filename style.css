@@ -1,0 +1,482 @@
+/* Normalize */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  /* font-family: "Playfair Display", sans-serif; */
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: 0;
+  border: 0;
+  outline: 0;
+}
+
+/* General */
+.container {
+  width: 100%;
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 15px;
+  /* background: red; */
+}
+
+.site-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Playfair Display", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.line {
+  width: 120px;
+  height: 1px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 12px 28px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 23px;
+  letter-spacing: 10%;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #ffffff;
+  color: #0f0f0f;
+  font-weight: 500;
+}
+
+.card {
+  width: 260px;
+}
+
+.card .img-block {
+  background: #191b1c;
+  padding: 55px 23px;
+}
+
+.card .p-name {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Playfair Display", sans-serif;
+  color: #fff;
+  margin: 25px 0 10px;
+}
+
+.card .price {
+  font-size: 16px;
+  font-weight: 700px;
+  font-family: "Playfair Display", sans-serif;
+  color: #d0d0d0;
+}
+
+/* Header */
+header {
+  padding: 15px 0;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-text {
+  color: #969696;
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Site-main */
+.menu {
+  background: #0f0f0f;
+  padding: 20px 0;
+}
+
+.menu .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-links {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "PT Sans", sans-serif;
+  line-height: 18px;
+  color: #969696;
+  text-transform: uppercase;
+  transition: 0.2s;
+  padding: 22.5px 20px;
+}
+
+.menu-links:hover {
+  color: #ffffff;
+  background: #1f1f1f;
+}
+
+.menu-icon {
+  width: 22px;
+  height: 22px;
+  color: #fff;
+  gap: 40px;
+}
+
+.menu .container .burger {
+  font-size: 25px;
+  display: none;
+}
+
+/* site-main */
+.main {
+  background: url(img/porten-bcg.png) no-repeat center / cover;
+  padding: 154.5px 0;
+}
+
+.porten-img {
+  border: 4px solid #fff;
+  width: 320px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.hero-text {
+  color: #fff;
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  text-transform: uppercase;
+  max-width: 730px;
+  margin: 80px auto 0;
+}
+
+/* season-section */
+.season {
+  display: flex;
+  justify-content: center;
+}
+
+.season .left {
+  width: 60%;
+  padding: 90px 0;
+}
+
+.season .left .line {
+  margin: 50px auto;
+}
+
+.season .left .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.season .right {
+  background: url(img/season-bcg.png) no-repeat center / cover;
+  width: 40%;
+  height: 730px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.season .right .text-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Collection */
+.collection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.collection .left {
+  width: 45%;
+}
+
+.collection .left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection .right {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.collection .right .text {
+  max-width: 470px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 21px;
+  text-align: justify;
+  padding: 0 15px;
+}
+
+.collection .right .btn {
+  margin-top: 20px;
+}
+
+/* New */
+.new {
+  padding: 120px 0;
+}
+
+.new .container .line {
+  margin: 40px auto 80px;
+}
+
+.new .container .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px 23px;
+}
+
+/* Brands */
+.brands {
+  background: #0f0f0f;
+  padding: 60px 0 80px;
+}
+
+.brands .container .line {
+  margin: 40px auto;
+}
+
+.brands .container .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Footer */
+.footer {
+  background: url(img/footer-bg.png) no-repeat center / cover;
+  padding: 80px 0 100px;
+}
+
+.footer .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer .container .title {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: 'Playfair Display', sans-serif;
+  line-height: 28px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.footer .container .text {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.footer .container .about,
+.footer .container .category,
+.footer .container .email {
+  width: 350px;
+}
+
+.footer .container .category .btns .type {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 21px;
+  color: #d0d0d0;
+  padding: 10px 20px;
+  background: #0f0f0f;
+}
+
+.footer .container .category .btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer .container .email .form {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.footer .container .email .form input {
+  padding: 10px 15px;
+  width: 210px;
+  outline: 0;
+  opacity: 40%;
+}
+
+.footer .container .email .form input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 21px;
+  color: #969696;
+}
+
+.footer .container .email .form .btn {
+  padding: 10px 20px;
+  background: #0f0f0f;
+  color: #ffffff;
+  border: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+}
+
+
+
+/* ------ Media ------- */
+@media(max-width: 1200px) {
+
+  .collection,
+  .season {
+    flex-wrap: wrap;
+  }
+
+  .collection .left,
+  .collection .right,
+  .season .left,
+  .season .right {
+    width: 100%;
+  }
+
+  .collection .right {
+    order: -1;
+    padding: 50px 0;
+  }
+
+}
+
+@media (max-width: 770px) {
+  .menu .container .burger {
+    display: block;
+  }
+
+  .menu .container .menu-list {
+    display: none;
+  }
+
+  /* main */
+  .main {
+    padding: 100px 0;
+  }
+
+  .main .porten-img {
+    width: 280px;
+    height: 280px;
+  }
+
+  /* 770 */
+  .season .right {
+    padding-bottom: 80px;
+    height: 550px;
+  }
+}
+
+@media (max-width: 540px) {
+  header {
+    display: none;
+  }
+
+  /* main */
+  .main {
+    padding: 70px 0;
+  }
+
+  .main .porten-img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .main .porten-img img {
+    width: 150px;
+  }
+
+  .main .hero-text {
+    font-size: 14px;
+  }
+
+  /* 540 */
+  .season .right {
+    padding-bottom: 40px;
+    height: 350px;
+  }
+}
